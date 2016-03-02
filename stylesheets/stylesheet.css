@@ -1,0 +1,23 @@
+body{
+  background-color: #000000;
+}
+
+.images{
+  float:left;
+  margin: 10px 10px 10px 10px;
+}
+
+#floatImage{
+  position:absolute;
+  width:50%;
+  height:50px;
+  top: 50%;/*10px;*/
+  left: 40%;
+  /*right:10px;*/
+  padding:16px;
+  background:#FFFFFF;
+  border:2px solid #2266AA;
+  z-index:100;
+  centerX: true;
+  centerY: true;
+}
