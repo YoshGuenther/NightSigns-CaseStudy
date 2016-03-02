@@ -1,6 +1,4 @@
-images = ["AllState","AmericanCampus","AustinDentalWorks","BarberShop","BBVCompass","BestLittlePawnShop","Binger","Bucks","CutiePis","EnhancedViewingExperience","EVOEntertainment","Flowerland","FrozenCave","LaCabana","PieSociety","SaltGrass","SetonMarbleFalls","Tacos","TheGallery","WeBuyGold"];
-
-
+images = ["AllState","AmericanCampus","AustinDentalWorks","BarberShop","BBVCompass","BestLittlePawnShop","Binger","BrakeCheck","Bucks","CafeMenet","CutiePis","EcoClean","EnhancedViewingExperience","EVOEntertainment","Flowerland","FrozenCave","LaCabana","PieSociety","SaltGrass","SetonMarbleFalls","Tacos","TheGallery","WeBuyGold"];
 
 function loadImage(imageNames, size, divSelector){
   imageNames.forEach(function(entry){
