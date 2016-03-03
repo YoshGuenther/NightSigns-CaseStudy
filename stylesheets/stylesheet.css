@@ -2,11 +2,10 @@ body{
   background-color: #000000;
 }
 
-.images{
-  float:left;
-  margin: 10px 10px 10px 10px;
+.grid-item{
+  width: 286px;
+  float: left;
 }
-
 #floatImage{
   position:absolute;
   width:50%;
@@ -20,4 +19,15 @@ body{
   z-index:100;
   centerX: true;
   centerY: true;
+}
+
+.static-banner {
+  position: absolute;
+  left: 10px;
+  top: 10px;
+  padding: 10px 30px;
+  color: white;
+  background: #A2C;
+  font-size: 22px;
+  z-index: 2; /* above items */
 }
