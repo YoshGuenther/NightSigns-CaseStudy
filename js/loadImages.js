@@ -1,5 +1,4 @@
-images = ["AllState","AmericanCampus","AustinDentalWorks","BarberShop","BBVCompass","BestLittlePawnShop","Binger","BrakeCheck","Bucks","CafeMenet","CutiePis","EcoClean","ElectricAvenue","EnhancedViewingExperience","EVOEntertainment","Ferrari","FerrariHorse","FerrariOFAustin","Flowerland","FrozenCave","GalaxyCafe","InStep","JerseyMike'sSubs","LaCabana","MamaFu'sAsianHouse","MaozVegetarian","MattressFirm","PieSociety","SaltGrass","SetonMarbleFalls","Tacos","TheGallery","WeBuyGold"
-];
+images = ["AllState","AmericanCampus","AustinDentalWorks","BarberShop","BBVCompass","BestLittlePawnShop","Bfree","Binger","BrakeCheck","Bucks","CafeMenet","CutiePis","EcoClean","ElectricAvenue","EnhancedViewingExperience","EVOEntertainment","Ferrari","FerrariHorse","FerrariOFAustin","Flowerland","FrozenCave","GalaxyCafe","IndependentBank","InStep","JerseyMike'sSubs","LaCabana","MamaFu'sAsianHouse","MaozVegetarian","MattressFirm","Maudie'sTex-Mex","medspringurgentcare","MossyGeneral&CosmeticDentistry","P","PieSociety","PTerry's","Reid's","SaltGrass","SetonMarbleFalls","SmoothieKing","SnapKitchen","Tacodeli","Tacos","TheGallery","WeBuyGold","YogurtPlanet"];
 
 //http://stackoverflow.com/questions/2450954/how-to-randomize-shuffle-a-javascript-array
 function shuffle(array){
@@ -21,7 +20,7 @@ function loadImage(imageNames, size, divSelector){
   imageNames.forEach(function(entry){
     img = new Image();
     img.src = "images/"+size+"/"+entry+".png";
-    img.width = "286"
+    img.width = 286
     img.className = "grid-item"
     divSelector.appendChild(img);
   });
