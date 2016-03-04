@@ -18,24 +18,43 @@ function shuffle(array){
 
 function loadImage(imageNames, size, divSelector){
   imageNames.forEach(function(entry){
+    var div = document.createElement('div');
+    div.className = "grid-item";
+
     img = new Image();
-    img.src = "images/"+size+"/"+entry+".png";
-    img.width = 286
-    img.className = "grid-item"
-    divSelector.appendChild(img);
+    var url = "images/"+size+"/"+entry+".png";
+    img.src = url;
+    img.width = 286;
+
+    div.appendChild(img);
+    divSelector.appendChild(div);
   });
 }
 
 window.onload = function () {
   images = shuffle(images)
-  var elem = document.querySelector('.grid');
- loadImage(images, "small", elem);
+  var elem = document.querySelector('#grid');
+  loadImage(images, "small", elem);
+
+  //http://stackoverflow.com/questions/5706757/is-there-a-way-to-check-document-ready-if-jquery-is-not-available
+  var tid = setInterval( function () {
+    if(document.readyState !== 'complete' ){
+      return;
+    }
+    else{
+      clearInterval(tid);
+      var msnry = new Masonry(elem, {
+        itemSelector: '.grid-item',
+        singleMode: true,
+      });
+    }
+  }, 100 );
 
 
- console.log(elem);
- var msnry = new Masonry( elem, {
-    itemSelector: '.grid-item',
-    columnWidth: 286,
-  });
+
+
 
 }
+
+
+//EXpand box to show a larger view: http://masonry.desandro.com/extras.html. Scroll to "Animating item size"
