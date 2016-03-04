@@ -15,7 +15,7 @@ function shuffle(array){
   }
   return array;
 }
-
+loadedImages = 0;
 function loadImage(imageNames, size, divSelector){
   imageNames.forEach(function(entry){
     var div = document.createElement('div');
@@ -25,6 +25,7 @@ function loadImage(imageNames, size, divSelector){
     var url = "images/"+size+"/"+entry+".png";
     img.src = url;
     img.width = 286;
+    img.onload = function(){loadedImages++};
 
     div.appendChild(img);
     divSelector.appendChild(div);
@@ -37,18 +38,21 @@ window.onload = function (){
   loadImage(images, "small", elem);
 
   //http://stackoverflow.com/questions/5706757/is-there-a-way-to-check-document-ready-if-jquery-is-not-available
+  var interval = 100;
+  var deltaTime = 0;
   var tid = setInterval(function (){
     if(document.readyState !== 'complete'){
       return;
     }
-    else{
+    else if(loadedImages == images.length || deltaTime >= 50000){
       clearInterval(tid);
       var msnry = new Masonry(elem, {
         itemSelector: '.grid-item',
         singleMode: true,
       });
     }
-  }, 100 );
+    deltaTime += interval;
+  }, interval );
 
 
 
