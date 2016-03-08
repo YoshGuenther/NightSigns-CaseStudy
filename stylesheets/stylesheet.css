@@ -2,6 +2,20 @@ body{
   background-color: #000000;
 }
 
+#options{
+  position: fixed;
+  width:14%;
+  height: 5%;
+  top: 1%;
+  left: 85%;
+  padding:0px;
+  margin: 0px;
+  z-index:100;
+  centerX: true;
+  centerY: true;
+  display: block;
+}
+
 .grid-item{
   width: 286px;
   float: left;
@@ -36,20 +50,7 @@ body{
 }
 
 
-#floatImage{
-  position:absolute;
-  width:50%;
-  height:50px;
-  top: 50%;/*10px;*/
-  left: 40%;
-  /*right:10px;*/
-  padding:16px;
-  background:#FFFFFF;
-  border:2px solid #2266AA;
-  z-index:100;
-  centerX: true;
-  centerY: true;
-}
+
 
 .static-banner {
   position: absolute;

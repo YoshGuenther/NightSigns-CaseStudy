@@ -1,5 +1,6 @@
 images = ["7Eleven","AllState","AmericanCampus","AustinDentalWorks","Avella","BarberShop","BBVCompass","BestLittlePawnShop","Bfree","Binger","BrakeCheck","Bucks","BurgerTexII","CafeExpress","CafeMenet","CentralChiropractic","Changos","ChangosMonkey","ChangosTaqueria","CutiePis","DiabloRojoTatooCross","DiatoJapaneseRestraunt","EcoClean","ElectricAvenue","EnhancedViewingExperience","EVOEntertainment","EyeJoy","Ferrari","FerrariHorse","FerrariOFAustin","Flowerland","FrozenCave","GalaxyCafe","GreenGos","GuzuGallery","HappyHour","HeartHospitalOfAustin","HoundsToothCoffe","IHeartVideo","IndependentBank","InStep","JerseyMike'sSubs","Julians","LaCabana","MamaFu'sAsianHouse","MaozVegetarian","MattressFirm","Maudie'sTex-Mex","medspringurgentcare","MossyGeneral&CosmeticDentistry","P","PieSociety","PTerry's","RedStella","Reid's","SaltGrass","SetonMarbleFalls","SmoothieKing","SnapKitchen","Tacodeli","Tacos","Tatoo","TheGallery","WeBuyGold","WEST","YogurtPlanet"
 ];
+
 //http://stackoverflow.com/questions/2450954/how-to-randomize-shuffle-a-javascript-array
 function shuffle(array){
   var currentIndex = array.length, temporaryValue, randomIndex;
@@ -15,8 +16,10 @@ function shuffle(array){
   }
   return array;
 }
-loadedImages = 0;
+
 function loadImage(imageNames, size, divSelector){
+  divSelector.innerHTML = "";
+  loadedImages = 0;
   imageNames.forEach(function(entry){
     var div = document.createElement('div');
     div.className = "grid-item";
@@ -32,10 +35,14 @@ function loadImage(imageNames, size, divSelector){
   });
 }
 
-window.onload = function (){
-  images = shuffle(images)
+console.log("about to onload")
+
+window.onload = function(){
+  listOfImages = images
+  listOfImages = shuffle(listOfImages)
   var elem = document.querySelector('#grid');
-  loadImage(images, "small", elem);
+  loadImage(listOfImages, "small", elem);
+  console.log("loaded images:")
 
   //http://stackoverflow.com/questions/5706757/is-there-a-way-to-check-document-ready-if-jquery-is-not-available
   var interval = 100;
@@ -54,11 +61,46 @@ window.onload = function (){
     deltaTime += interval;
   }, interval );
 
-
-
-
-
+  var button = document.getElementById("searchButton");
+  button.onlick = searchAndFilter();
 }
+
+var searchAndFilter = function(){
+  var searchBox = document.getElementById("search")
+  var searchTerm = searchBox.value;
+  console.log(searchTerm);
+  if(searchTerm != undefined){
+    var dupArray = images.slice();
+    for(var i = 0; i < dupArray.length; i++){
+      if(dupArray[i].indexOf(searchTerm) < 0){ //Doesn't contain term
+      }
+    }
+  }
+}
+
+
+
+
+/*
+var button = document.getElementById("searchButton");
+var searchBox = document.getElementById("search")
+console.log(searchBox.value);
+//button.onlick = searchAndFilter(searchBox.value)
+var form = document.getElementById("searchForm");
+form.submit(function(e){
+
+  e.preventDefault();
+  return false;*/
+
+
+
+
+
+
+
+
+
+
 
 
 //EXpand box to show a larger view: http://masonry.desandro.com/extras.html. Scroll to "Animating item size"
