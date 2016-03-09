@@ -14,6 +14,11 @@ body{
   centerX: true;
   centerY: true;
   display: block;
+  float:right;
+}
+
+#searchButton{
+  float: right;
 }
 
 .grid-item{
