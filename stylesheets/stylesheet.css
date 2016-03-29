@@ -1,10 +1,15 @@
 body{
   background-color: #000000;
 }
+#wrapper{
+  display: block;
+  height: 200px;
+  z-index: 2;
+  background-color: grey;
+}
 
 #description{
   color: white;
-  float: left;
 }
 
 #options{
@@ -14,7 +19,6 @@ body{
   left: 85%;
   padding:0px;
   margin: 0px;
-  z-index:100;
   centerX: true;
   centerY: true;
   display: block;
@@ -28,6 +32,7 @@ body{
 .grid-item{
   width: 286px;
   float: left;
+  z-index: -1;
 }
 
 #social ul {
