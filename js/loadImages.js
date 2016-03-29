@@ -28,7 +28,7 @@ window.onload = function(){
       if(document.readyState !== 'complete'){
         return;
       }
-      else if(loadedImages == imageArray.length || deltaTime >= 3000){
+      else if(loadedImages == imageArray.length || deltaTime >= 5000){
         clearInterval(tid);
         var msnry = new Masonry(elem, {
           itemSelector: '.grid-item',
