@@ -2,6 +2,23 @@
   {"fileName":"7Eleven.png", "company": "7 Eleven", "tags": ["Gas Station", "Convience Store", "Back Lit"]},
   {"fileName":"AllState.png", "company":"All State", "tags":["Insurance", "Back Lit"]},
   {"fileName":"AmericanCampus.png", "company":"American Campus Communities", "tags":["Student Housing", "Back Lit"]},
-  {}
+  {"fileName":"ATMCash.png", "company":null, "tags":["ATM", "Back Lit"]},
+  {"fileName":"AustinDentalWorks.png", "company":"Austin Dental Works", "tags":["Dentist", "Teeth", "Oral Hygiene"]},
+  {"fileName":"Avella.png", "company":"Avella Specialty Pharmacy", "tags":["Pharmacy", "Back Lit"]},
+  {"fileName":"BarberShop.png", "company":"Barber Shop", "tags":["Barber Shop", "Hair Cut"]},
+  {"fileName":"BBVACompass.png", "company":"BBVA Compass", "tags":["Banking", "Credit Cards", "Mortgages", "Loans"]},
+  {"fileName":"Beautyrest.png", "company":"Beautyrest", "tags":["Mattresses", "Sleep", "Neon Lights"]},
+  {"fileName":"BestLittlePawnShop.png", "company":"Best Little Pawn Shop", "tags":["Pawn Shop", "Resale", "Second Hand", "Back Lit"]},
+  {"fileName":"Bfree.png", "company":"BFree Yoga", "tags":["Yoga Classes"]},
+  {"fileName":"BodyBrite.png", "company":"BodyBrite Austin", "tags":["Laser Hair Removal", "Back Lit"]},
+  {"fileName":"BrakeCheck.png", "company":"Brake Check", "tags":["Auto Repair", "Auto Maintenance", "Neon Lights", "Back Lit"]},
+  {"fileName":"Bucks.png", "company":"Bucks Food and Fuel", "tags":["Gas Station", "Convience Store", "Back Lit"]},
+  {"fileName":"BurgerTexII.png", "company":"Burger Tex 2", "tags":["Burgers", "Restaurant", "Back Lit"]},
+  {"fileName":"CafeExpress.png", "company":"Cafe Express", "tags":["Cafe", "Fresh Food", "Neon Lights"]},
+  {"fileName":"CafeMonet.png", "company":"Cafe Monet", "tags":["Painting", "Pottery", "Neon Lights"]},
+  {"fileName":"CallaFloritst.png", "company":"Calla Florist", "tags":["Florist", "Flowers", "Back Lit"]},
+  {"fileName":"CashAmericaPawn.png", "company":"Cash America International", "tags":["Pawn Shop", "Resale", "Second Hand", "Back Lit"]},
+  {"fileName":"CashAmericaPawnCasaDeEmpeno.png", "company":"Cash America International", "tags":["Pawn Shop", "Resale", "Second Hand", "Back Lit"]},
+  {"fileName":"Zinger.png", "company":"Zinger Hardware & General Merchant", "tags":["Hardware Store", "Furniture", "Household Goods", "Garden Items", "Toys"]}
   ]
 }
