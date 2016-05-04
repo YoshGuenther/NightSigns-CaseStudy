@@ -1,4 +1,4 @@
-{"images":[
+var imageData = {"images":[
   {"fileName":"7Eleven.png", "company": "7 Eleven", "tags": ["Gas Station", "Convience Store", "Back Lit"]},
   {"fileName":"AllState.png", "company":"All State", "tags":["Insurance", "Back Lit"]},
   {"fileName":"AmericanCampus.png", "company":"American Campus Communities", "tags":["Student Housing", "Back Lit"]},
@@ -20,5 +20,4 @@
   {"fileName":"CashAmericaPawn.png", "company":"Cash America International", "tags":["Pawn Shop", "Resale", "Second Hand", "Back Lit"]},
   {"fileName":"CashAmericaPawnCasaDeEmpeno.png", "company":"Cash America International", "tags":["Pawn Shop", "Resale", "Second Hand", "Back Lit"]},
   {"fileName":"Zinger.png", "company":"Zinger Hardware & General Merchant", "tags":["Hardware Store", "Furniture", "Household Goods", "Garden Items", "Toys"]}
-  ]
-}
+]}
